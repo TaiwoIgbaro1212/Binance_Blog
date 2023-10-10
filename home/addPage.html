@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.1/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="logo">
+        <h2>TeeClassic</h2>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="/contact/contact.html">Contact Me</a></li>
+          <li><a href="/signup/signup.html">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- End of navbar -->
+
+    <!-- Main -->
+    <div class="content">
+      <!-- <form class="post_form" enctype="multipart/form-data"> -->
+      <div class="image_flex">
+        <label class="form-label" for="image_input">Upload Post Image: </label>
+        <input
+          type="file"
+          class="form-control"
+          id="image_input"
+          accept="image/*"
+          name="image"
+        />
+      </div>
+      <input
+        type="text"
+        name="title"
+        id="title"
+        placeholder="Title..."
+        name="title"
+        value=""
+      />
+      <textarea
+        name="message"
+        id="message"
+        cols="30"
+        rows="10"
+        name="message"
+        placeholder="Enter your message here..."
+      ></textarea>
+      <div class="buttons">
+        <a class="back" href="index.html">Back</a>
+        <button class="save_btn" type="submit">Save</button>
+      </div>
+      <!-- </form> -->
+    </div>
+
+    <!-- <script src="main.js"></script> -->
+    <script src="addPage.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </body>
+</html>
